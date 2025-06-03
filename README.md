@@ -15,9 +15,9 @@ Estrutura de autenticação para o projeto **Login**.
 ![Wireframe de Login](./assets/Captura%20de%20tela%202025-06-03%20135826.png)
 ![Wireframe de Posts e Autenticação](./assets/Captura%20de%20tela%202025-06-03%20135837.png)
 ## GitHubs dos Testers
-[Erick Pinto](https://github.com/ErickAguiar06)
-[Thiago Muniz](https://github.com/ThiagoMuniz08)
-[Pedro Russo](https://github.com/pedrodnrusso)
+- [Erick Pinto](https://github.com/ErickAguiar06)
+- [Thiago Muniz](https://github.com/ThiagoMuniz08)
+- [Pedro Russo](https://github.com/pedrodnrusso)
 ## Tecnologias Utilizadas
 | Tecnologias  | Utilidades |
 | ------------- |:-------------:|

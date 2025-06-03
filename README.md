@@ -25,3 +25,6 @@ Estrutura de autenticação para o projeto **Login**.
 | Insomnia     | Software para testes de Back-End    |
 | NodeJs |  Interpretar codigos em JavaScript (Vanilla)     |
 | Git    | Ferramenta colaborativa de versionamento |
+## Diagrama de Atividades e DER
+![Wireframe DT](./assets/da.png)
+![Wireframe DER](./assets/da.png)

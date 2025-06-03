@@ -26,5 +26,4 @@ Estrutura de autenticação para o projeto **Login**.
 | NodeJs |  Interpretar codigos em JavaScript (Vanilla)     |
 | Git    | Ferramenta colaborativa de versionamento |
 ## Diagrama de Atividades e DER
-![Wireframe DT](./assets/da.png)
-![Wireframe DER](./assets/da.png)
+![Wireframe DT](./assets/UML.png)

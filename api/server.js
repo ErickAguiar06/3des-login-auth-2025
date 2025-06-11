@@ -1,16 +1,30 @@
-require("dotenv").config();
+require('dotenv').config();
 const express = require('express');
-const app = express();
-const port = 3000;
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const path = require('path');
 
 const loginRoutes = require('./src/routes/login');
 const postsRoutes = require('./src/routes/posts');
 
-app.use(express.json());
+const app = express();
+const PORT = 3000;
 
+app.use(cors());
+app.use(bodyParser.json());
+
+// Rotas da API
 app.use(loginRoutes);
 app.use(postsRoutes);
 
-app.listen(port, () => {
-    console.log('listening on ' + port);
-})
+// Servir arquivos estáticos (opcional)
+app.use(express.static(path.join(__dirname, '../front')));
+
+// Rota padrão para login.html
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../front/login.html'));
+});
+
+app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${PORT}`);
+});

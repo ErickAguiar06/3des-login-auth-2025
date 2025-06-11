@@ -2,12 +2,11 @@ const jsonwebtoken = require("jsonwebtoken");
 const crypto = require('node:crypto');
 
 const Login = (req, res) => {
-    const { user, psw } = req.body;
-    
-    try {
-        const correctPassword = ((user === "usuario@gmail.com") && (psw === "a1b2@b3c4"));
+    const { email, password } = req.body;
+    const correctPassword = ((email === "usuario@gmail.com") && (password === "a1b2@b3c4"));
 
-        if(!correctPassword) res.status(401).send({message:'E-mail or Password incorrect !'});
+    try {
+        if(!correctPassword) return res.status(401).send({message:'E-mail or Password incorrect !'});
 
         const token = jsonwebtoken.sign(
             {
@@ -23,8 +22,6 @@ const Login = (req, res) => {
     }catch(err) {
         res.status(500).send(err).end();
     }
-    
-    res.status(200).end();
 };
 
 module.exports = {
